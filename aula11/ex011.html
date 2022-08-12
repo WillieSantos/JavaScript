@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Nacionalidades</title>
+</head>
+<body>
+    <h1>Sistema de Nacionalidades</h1>
+    <label for="inac">País:</label>
+    <input type="text" name="nac" id="inac" placeholder="informe o seu país">
+    <button value="Verificar" onclick= "infnac()">Enviar</button>
+    <div id="res">
+
+    </div>
+    
+    <script>
+        function infnac() {
+            var txtnac = document.querySelector('input#inac')
+            var res = document.querySelector('div#res')
+            var nac = String(txtnac.value)            
+            if (nac == 'Brasil' || nac == 'brasil') {
+               res.innerHTML += `<p>Você é Brasileiro(a)!</p>`
+            } else {
+                res.innerHTML += `<p>Você é Estrangeiro(a)!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
