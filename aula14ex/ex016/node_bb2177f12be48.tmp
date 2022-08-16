@@ -1,0 +1,30 @@
+function contar() {
+    var ini = document.getElementById('ini')
+    var fim = document.getElementById('fim')
+    var pas = document.getElementById('pas')
+    var res = document.getElementById('res')
+
+    ini = Number(ini.value)
+    fim = Number(fim.value)
+    pas = Number(pas.value)
+    
+    /*for(c = ini; c <= fim; c = c + pas) {
+
+        res.innerHTML = `Contando:<p>${c} &#x1F449; </p>`
+
+    } */
+      
+    
+}
+
+ini = 1
+fim = 10
+pas = 2
+
+
+for(c = ini; c <= fim; c = fim/pas) {
+
+        console.log(`Contador ${c}`)
+
+    }
+
